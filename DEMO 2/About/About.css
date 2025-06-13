@@ -1,0 +1,288 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    background-color: blue;
+}
+.heading{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 20px auto;
+}
+.heading h1{
+    font-weight: bold;
+    font-family: Tahoma;
+    font-size: 50px;
+    color: black;
+    margin-bottom: 25px;
+    position: relative;
+}
+.heading h1::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    display: block;
+    margin: 0 auto;
+    background-color: brown;
+}
+.heading p{
+    font-size: 18px;
+    color: black;
+    margin-bottom: 35px;
+}
+.container{
+    width: 90%;
+    margin: 0 auto;
+padding: 10px 20px;
+}
+.About{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.About-image{
+    flex: 1;
+    margin-right: 40px;
+    overflow: hidden;
+}
+.About-image img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    transition: 0.5s ease;
+}
+.About-image:hover img{
+    transform: scale(1.2);
+}
+.About-content{
+    flex: 1;
+}
+.About-content h2{
+    font-weight: bold;
+    font-size: 23px;
+    margin-bottom: 15px;
+    color: black;
+    font-family: tahoma;
+}
+.About-content p{
+    font-size: 18px;
+    line-height: 1.5;
+    color: black;
+    font-family: tahoma;
+}
+.About-content .gallery{
+    display: inline-block;
+    padding: 10px 20px;
+    color: black;
+    font-size: 19px;
+    text-decoration: none;
+    background-color: red;
+    border-radius: 25px;
+    margin-top: 15px;
+    transition: o.3s ease-in-out;
+    font-weight: bold;
+    font-family: Tahoma;
+}
+.About-content .gallery{
+    padding-top: 10px;
+    margin-top: 30px;
+
+}
+.About-content .gallery:hover{
+    background-color: white;
+}
+
+@media  screen and (max-width: 768px){
+    .heading{
+        padding: 0px 20px;
+    }
+    .heading h1{
+        font-size: 36px;
+    }
+    .heading p{
+        font-size: 17px;
+        margin-bottom: 0px;
+    }
+    .container{
+        padding: 0px;
+    }
+    .About{
+        padding: 20px;
+        flex-direction: column;
+    }
+    .About-image{
+        margin-right: 0px;
+        margin-bottom: 20px;
+    }
+    .About-content p{
+        padding: 0px;
+        font-size: 16px;
+    }
+    .About-content.read-more{
+        font-size: 16px;
+    }
+}
+footer{
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    background: linear-gradient(to right, #00093c, #2d0b00);
+    color: #fff;
+    padding: 100px 0 30px;
+    border-top-left-radius: 0;
+    font-size: 13px;
+    line-height: 20px;
+
+}
+.row{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.col{
+    flex-basis: 25%;
+    padding: 10px;
+}
+.col:nth-child(2), .col:nth-child(3){
+    flex-basis: 15%;
+}
+.logo{
+    width: 80px;
+    margin-bottom: 30px;
+}
+.col h3{
+    width: fit-content;
+    margin-bottom: 40px;
+    position: relative;
+    
+}
+.email-id{
+    width: fit-content;
+    border-bottom: 1px solid #ccc;
+    margin: 20px 0;
+}
+ul li{
+    list-style: none;
+    margin-bottom: 12px;
+}
+ul li a{
+    text-decoration: none;
+    color: white;
+
+}
+ul li a:hover{
+    color: red;
+    transition: 0.5 ease-in-out;
+
+}
+form{
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid white;
+    margin-bottom: 50pxs;
+}
+form .far{
+    font-size: 18px;
+    margin-right: 10px;
+
+}
+form input{
+    width: 100%;
+    background: transparent;
+    color: white;
+    border: 0;
+    outline: none;
+}
+form button{
+    background: transparent;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    
+}
+form button .fa-arrow-right{
+    font-size: 16px;
+    color: green;
+}
+social-icons .fab{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    color: #000;
+    background: white;
+    margin-right: 15px;
+    cursor: pointer;
+}
+hr{
+    width: 90%;
+    border: 0;
+    border-bottom: 1px solid white;
+    margin: 20px auto;
+
+
+}
+.copyright{
+    text-align: center;
+
+}
+.underline{
+    width: 100%;
+    height: 5px;
+    background: #767676;
+    border-radius: 3px;
+    position: absolute;
+    top: 25px;
+    left: 0;
+    overflow: hidden;
+
+}
+.underline span{
+    width: 15px;
+    height: 100%;
+    background: white;
+    border-radius: 3px;
+    position: absolute;
+    top: 0;
+    left: 10px;
+    animation: moving 2s linear infinite;
+}
+
+@keyframes moving{
+    0%{
+        left: -20px;
+    }
+    100%{
+        left: 100%;
+    }
+}
+@media (max-width: 700px){
+    footer{
+        bottom: unset;
+    }
+    .col{
+        flex-basis: 100%;
+        
+    }
+    .col:nth-child(2), .col:nth-child(3){
+        flex-basis: 100%;
+    }
+}
+
+
